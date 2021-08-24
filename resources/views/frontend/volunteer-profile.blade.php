@@ -2,7 +2,7 @@
 @section('content')
  <!-- Start main-content -->
             <div class="main-content">
-                <section id="programs" class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg8.jpg" style="background-image: url(&quot;images/bg/bg8.jpg&quot;); background-position: 50% 41px;">
+                <section id="programs" class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="{{ asset('assets/images/bg/bg8.jpg')}}" style="background-image: url(&quot;images/bg/bg8.jpg&quot;); background-position: 50% 41px;">
                     <div class="container pt-70 pb-20">
                         <!-- Section Content -->
                         <div class="section-content">

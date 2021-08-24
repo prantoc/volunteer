@@ -2,7 +2,7 @@
 @section('content')
  <!-- Start main-content -->
             <div class="main-content">
-                <section id="programs" class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="images/bg/bg8.jpg" style="background-image: url(&quot;images/bg/bg8.jpg&quot;); background-position: 50% 41px;">
+                <section id="programs" class="inner-header divider parallax layer-overlay overlay-dark-5" data-bg-img="{{ asset('assets/images/bg/bg8.jpg')}}" style="background-image: url(&quot;images/bg/bg8.jpg&quot;); background-position: 50% 41px;">
                     <div class="container pt-70 pb-20">
                         <!-- Section Content -->
                         <div class="section-content">
@@ -34,7 +34,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -62,7 +62,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -90,7 +90,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -118,7 +118,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -146,7 +146,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -174,7 +174,7 @@
                                                             <h2 style="color: #ffffff;text-align: center;font-family:Lato;font-weight:400;font-style:normal" class="vc_custom_heading">Dhaka District</h2>
                                                             <p><span style="color: #ffffff;"><b>Details About Dhaka District</b></span></p>
                                                             <div class="vc_btn3-container vc_btn3-center">
-                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="volunteer-members.html" title="" target="_blank">Read More</a></div>
+                                                                <a class="vc_general vc_btn3 vc_btn3-size-sm vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-warning" href="{{ route('volunteer-members')}}" title="" target="_blank">Read More</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
