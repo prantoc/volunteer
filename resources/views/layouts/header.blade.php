@@ -10,14 +10,14 @@
     <meta name="keywords" content="street children, child labor, slum children, child education, health, shelter, poverty reduction, hunger, quality education, nutrition, disaster,  women, youth , charitable organization, development organization, NGO, empowerment, development, social enterprises, livelihood,  climate change, migration, climate refugee, underprivileged children, rehabilitation,  child rights, child trafficking, child protection, child abuse, girls club, early marriage, dowry, sexual and physical abuse, gender based violence , preventing violent extremism, combating violent extremism, social harmony, social cohesion, inclusion, no one left behind, minority, ethnic minority, tribal community, COVID-19 victims, cyclone victims, climate affected, flood, research, program development" />
 
     <!-- Page Title -->
-    <title>Nonprofit Organization</title>
+    <title>{{setting('site.title')}} | {{setting('site.description')}}</title>
 
     <!-- Favicon and Touch Icons -->
-    <link href="{{ asset('assets/images/logo-1.jpg')}}" rel="shortcut icon" type="image/png">
-    <link href="{{ asset('assets/images/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link rel="icon" type="image/png" href="{{ Voyager::image( Voyager::setting('site.favicon')) }}">
+    {{-- <link href="{{ asset('assets/images/apple-touch-icon.png')}}" rel="apple-touch-icon">
     <link href="{{ asset('assets/images/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
     <link href="{{ asset('assets/images/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-    <link href="{{ asset('assets/images/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
+    <link href="{{ asset('assets/images/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144"> --}}
 
     <!-- Stylesheet -->
     <link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
@@ -47,7 +47,7 @@
 
     <!-- CSS | Theme Color -->
     <link href="{{ asset('assets/css/colors/theme-skin-color-set-4.css')}}" rel="stylesheet" type="text/css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- external javascripts -->
     <script src="{{ asset('assets/js/jquery-2.2.4.min.js')}}"></script>
     <script src="{{ asset('assets/js/jquery-ui.min.js')}}"></script>
@@ -85,19 +85,33 @@
                 <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
                     <div class="container">
                         <nav id="menuzord-right" class="menuzord default">
-                            <a class="menuzord-brand pull-left flip" href="index.html">
-                                <img src="{{ asset('assets/images/logo-1.jpg')}}" alt="">
+                            <a class="menuzord-brand pull-left flip" href="/">
+                                <img src="{{ Voyager::image( Voyager::setting('site.logo')) }}" alt="">
                             </a>
                             <ul class="menuzord-menu onepage-nav">
-                                <li class="active"><a href="{{ route('home') }}">Home</a></li> 
-
-                                <li><a href="{{ route('news') }}">News</a></li>
+                                <li ><a href="{{ route('home') }}">Home</a></li>
+                                <li><a href="{{ route('news') }}">Events</a></li>
                                 <li><a href="{{ route('volunteer') }}">Volunteer</a></li>
-                                <li><a href="{{ route('news') }}">Volunteer story</a></li>
+                                <li><a href="{{ route('volunteer-story') }}">Volunteer story</a></li>
                                 <li class="donate"><a href="{{ route('register') }}">Join as volunteer</a></li>
                             </ul>
                         </nav>
+                    </div>  
+                    <div id="myOverlay" class="overlay">
+                      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                      <div class="overlay-content">
+                        <form action="{{ route('search') }}" method="GET">
+                          <input type="text" placeholder="Search.." name="search" required>
+                          <select name="searchName" id="">
+                              <option value="0">Events</option>
+                              <option value="1">Volunteer Story</option>
+                          </select>
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
                     </div>
+                                    
+                    <i class="fas fa-search top-search openBtn mb-lg-0 mb-xl-0 mb-2" onclick="openSearch()"></i>      
                 </div>
             </div>
         </header>
@@ -110,11 +124,20 @@
         
     </main>
         @include('layouts.footer')
-        <a class="scrollToTop" href="news.html"><i class="fa fa-angle-up"></i></a>
+        <a class="scrollToTop" href="/"><i class="fa fa-angle-up"></i></a>
 </div>
      <!-- Footer Scripts -->
     <!-- JS | Custom script for all pages -->
     <script src="{{ asset('assets/js/custom.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+    function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+    }
+    function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
 
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
       (Load Extensions only on Local File Systems ! 
@@ -132,5 +155,9 @@
     <script src="{{ asset('assets/js/oddometer-active.js')}}"></script>
     <script src="{{ asset('assets/js/jquery.appear.min.js')}}"></script>
     <script src="{{ asset('assets/js/step-signup.js')}}"></script>
+
+
+    {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> --}}
+<script src="{{ asset('js/share.js') }}"></script>
   </body>
 </html>

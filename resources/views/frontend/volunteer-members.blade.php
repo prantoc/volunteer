@@ -18,72 +18,23 @@
                 <section>
                     <div class="container">
                         <div class="row">
+                            @if(count($volunteers))
+                            @foreach($volunteers as $vlntr)
                             <div class="col-sm-4">
                                 <div class="thm-profile">
                                     <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
+                                        <img src="{{ Voyager::image( $vlntr->image ) }}" alt="Nayem Durjai" class="img-responsive">
                                     </div>
                                     <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
+                                        <div class="thm-profile-sub-title">{{$vlntr->position}}, {{$vlntr->district->name}} District</div>
+                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile', $vlntr->slug)}}">{{$vlntr->name}}</a></h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="thm-profile">
-                                    <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
-                                    </div>
-                                    <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thm-profile">
-                                    <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
-                                    </div>
-                                    <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thm-profile">
-                                    <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
-                                    </div>
-                                    <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thm-profile">
-                                    <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
-                                    </div>
-                                    <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thm-profile">
-                                    <div class="thm-profile-img">
-                                        <img src="https://vbd.com.bd/wp-content/uploads/2020/01/Nayem-Durjai-1.jpg" alt="Nayem Durjai" class="img-responsive">
-                                    </div>
-                                    <div class="thm-profile-content">
-                                        <div class="thm-profile-sub-title">President, Brahmanbaria District</div>
-                                        <h3 class="thm-profile-title"><a href="{{ route ('volunteer-profile')}}">Nayem Durjai</a></h3>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                            @else
+                            No Data found!
+                            @endif
                         </div>
                     </div>
                 </section>
