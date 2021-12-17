@@ -29,6 +29,7 @@ Route::get('volunteer-members/{slug}', 'App\Http\Controllers\HomeController@volu
 Route::get('volunteer-profile/{slug}', 'App\Http\Controllers\HomeController@volunteerProfile')->name('volunteer-profile');
 
 Route::get('register', 'App\Http\Controllers\HomeController@register')->name('register');
+Route::post('volunteer-register', 'App\Http\Controllers\HomeController@volunteerRegister')->name('volunteer-register');
 
 Route::get('/search/', 'App\Http\Controllers\HomeController@search')->name('search');
 

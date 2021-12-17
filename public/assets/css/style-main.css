@@ -7802,232 +7802,100 @@ div h3.thm-profile-title {
 
 
 
+/*register-form*/
 
-
-
-
-  .register {
-  padding: 0px 0; }
-  .register .sign-up-step {
-    -webkit-box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
-    box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 30px; }
-    .register .sign-up-step ul {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .register .sign-up-step ul li {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        padding: 0 30px;
-        border-right: 1px solid rgba(56, 56, 56, 0.3);
-        border-top: 1px solid rgba(56, 56, 56, 0.2);
-        border-bottom: 1px solid rgba(56, 56, 56, 0.2);
-        height: 50px;
-        line-height: 48px;
-        border-radius: 0 50px 50px 0;
-        margin-left: -25px;
-        padding-left: 45px;
-        -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-        align-items: baseline;
-        -webkit-transition: all 0.3s ease-in;
-        -moz-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in;
-        position: relative;
-        z-index: 2;
-        overflow: hidden; }
-        .register .sign-up-step ul li:after {
-          position: absolute;
-          content: '';
-          left: 0;
-          top: 0;
-          width: 0;
-          height: 100%;
-          background: -webkit-linear-gradient(290deg, #5b8f47, #222222c7);
-          background: -o-linear-gradient(290deg, #5b8f47, #222222c7);
-          background: linear-gradient(160deg, #5b8f47, #222222c7);
-          z-index: -1;
-          -webkit-transition: all 0.3s ease-in;
-          -moz-transition: all 0.3s ease-in;
-          -o-transition: all 0.3s ease-in;
-          transition: all 0.3s ease-in;
-          border-radius: 0 50px 50px 0; }
-        .register .sign-up-step ul li.active {
-          border-color: #fff; }
-          .register .sign-up-step ul li.active:after {
-            width: 100%; }
-          .register .sign-up-step ul li.active span.text, .register .sign-up-step ul li.active span.icon {
-            color: #fff; }
-        .register .sign-up-step ul li:first-child {
-          padding-left: 25px;
-          z-index: 5;
-          border-radius: 10px 50px 50px 10px;
-          border-left: 1px solid rgba(56, 56, 56, 0.6);
-          margin-left: 0; }
-        .register .sign-up-step ul li:nth-child(2) {
-          z-index: 4; }
-        .register .sign-up-step ul li:nth-child(3) {
-          z-index: 3; }
-        .register .sign-up-step ul li:last-child {
-          z-index: 2; }
-          .register .sign-up-step ul li:last-child.active:after {
-            background: #79a125; }
-        .register .sign-up-step ul li span.icon {
-          margin-right: 10px;
-          color: rgba(56, 56, 56, 0.6); }
-          .register .sign-up-step ul li span.icon svg {
-            height: 22px;
-            width: auto;
-            font-size: auto; }
-        .register .sign-up-step ul li span.text {
-          text-transform: uppercase;
-          font-size: 14px;
-          font-weight: 400;
-          color: rgba(56, 56, 56, 0.8); }
-  .register .all-form {
-    -webkit-box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
-    box-shadow: 0px 0px 11px 7px rgba(56, 56, 56, 0.08);
-    border-radius: 10px;
-    padding: 30px;
-    position: relative; }
-  .register .single-form {
-    display: none; }
-    .register .single-form#first-step {
-      display: block; }
-    .register .single-form form div {
-      position: relative; }
-    .register .single-form form label {
-      display: block;
-      padding-bottom: 6px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: #383838;
-      padding-top: 6px;
-      margin-bottom: 0;
-      position: absolute;
-      bottom: 7px;
-      left: 30px;
-      -webkit-transition: all 0.3s ease-in;
-      -moz-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in;
-      opacity: .5; }
-      .register .single-form form label.active {
-        font-size: 12px;
-        font-weight: 500;
-        opacity: 1;
-        bottom: 50px;
-        left: 0;
-        color: #5b8f47; }
-    .register .single-form form input {
-      width: 100%;
-      height: 50px;
-      padding: 0 30px;
-      margin-top: 30px;
-      border: 1px solid rgba(56, 56, 56, 0.2);
-      border-radius: 5px;
-      -webkit-transition: all 0.3s ease-in;
-      -moz-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
-      .register .single-form form input:focus {
-        border-color: #5b8f47; }
-    .register .single-form p {
-      font-size: 14px;
-      color: #383838;
-      opacity: .6;
-      margin-bottom: 0; }
-    .register .single-form .subbutton {
-      margin-top: 25px;
-      border: none;
-      background: #5b8f47;
-      height: 50px;
-      width: 150px;
-      color: #fff;
-      text-transform: uppercase;
-      border-radius: 5px;
-      font-weight: 500;
-      outline: none;
-      cursor: pointer;
-      -webkit-transition: all 0.3s ease-in;
-      -moz-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-      transition: all 0.3s ease-in; }
-      .register .single-form .next:hover {
-        background: #383838; }
-      .register .single-form .next.disabled {
-        cursor: not-allowed;
-        background: #ddd; }
-  .register .final-step {
-    text-align: center;
-    display: none;
-    padding: 120px 0;
-    border: 1px solid rgba(56, 56, 56, 0.2);
-    border-radius: 5px; }
-    .register .final-step .text {
-      display: block;
-      color: #79a125;
-      font-size: 34px;
-      margin-top: 17px;
-      margin-bottom: -13px; }
-    .register .final-step svg {
-      width: 100px;
-      display: inline-block; }
-    .register .final-step .path {
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 0; }
-      .register .final-step .path.circle {
-        -webkit-animation: dash .9s ease-in-out;
-        animation: dash .9s ease-in-out; }
-      .register .final-step .path.line {
-        stroke-dashoffset: 1000;
-        -webkit-animation: dash .9s .35s ease-in-out forwards;
-        animation: dash .9s .35s ease-in-out forwards; }
-      .register .final-step .path.check {
-        stroke-dashoffset: -100;
-        -webkit-animation: dash-check .9s .35s ease-in-out forwards;
-        animation: dash-check .9s .35s ease-in-out forwards; }
-.register .single-form .next {
-    margin-top: 25px;
-    border: none;
-    background: #5B8F47;
-    height: 50px;
-    width: 150px;
-    color: #fff;
-    text-transform: uppercase;
+form {
+  padding: 0 10%;
+  section {
+    width: calc(50% - 40px);
+    padding: 20px;
+    background: #8ed294;
+    margin: 20px;
     border-radius: 5px;
-    font-weight: 500;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+    .input-container {
+      label {
+        display: block;
+        margin-bottom: 4px;
+        color: white;
+        font-size: 16px;
+        text-shadow: 0px 2px 1px #65ad6b;
+        font-family: 'Quicksand', sans-serif;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 5px 10px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background: #d7ffdb;
+        box-shadow: 0 2px 0px #77bd7d;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        color: #757575;
+        &:focus {
+          outline: none;
+          background: white;
+        }
+      }
+      textarea {
+        height: 122px;
+        padding: 15px 10px;
+        resize: none;
+      }
+      padding:10px;
+    }
+  }
+  .send-container {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+    input {
+      background: #77bd7d;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background: #8ed294;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  @media(max-width:992px) {
+    padding: 0 5%;
+  }
+  @media(max-width:768px) {
+    margin-bottom:50px;
+    section {
+      width: 100%;
+      margin: 0;
+      &.left {
+        margin-bottom: -30px;
+      }
+    }
+    .send-container {
+      margin-right: 0;
+      margin-top:15px;
+      input{
+        width:100%;
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

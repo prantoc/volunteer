@@ -810,7 +810,7 @@
                             <div class="themeum-action">
                                 <div class="row">
                                     <div class="col-sm-9">
-                                        <h3 class="action-titlecustomstyle" style="font-size:14px;line-height: normal;color:#ffffff;font-weight:400;margin:28px 0 0;">Let's Rebuild Our Nation!</h3>
+                                        <h3 class="action-titlecustomstyle" style="font-size:14px;line-height: normal;color:#ffffff;font-weight:400;margin:28px 0 0;"></h3>
                                         <span class="action-sub-titlecustomstylesub" style="font-size:24px;line-height: normal;color:#ffffff;font-weight:700;">JOIN THE VOLUNTEER REGISTRATION!
                                         </span>
                                     </div>
@@ -930,26 +930,26 @@
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="single-counter">
-                    <span class="number odometer" data-count="1854">0000</span>
-                    <span class="title">Project Finished</span>
+                    <span class="number odometer" data-count="{{$totalVolunteers}}">0000</span>
+                    <span class="title">Volunteers</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="single-counter">
-                    <span class="number odometer" data-count="3254">0000</span>
-                    <span class="title">Line Of Coding</span>
+                    <span class="number odometer" data-count="{{$totalEvents}}">0000</span>
+                    <span class="title">Projects</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="single-counter">
-                    <span class="number odometer" data-count="584">000</span>
-                    <span class="title">Award Won</span>
+                    <span class="number odometer" data-count="{{$totalVStories}}">000</span>
+                    <span class="title">Volunteer Stories</span>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="single-counter">
-                    <span class="number odometer" data-count="1731">0000</span>
-                    <span class="title">Satisfied Clients</span>
+                    <span class="number odometer" data-count="{{$totalDistrict}}">0000</span>
+                    <span class="title">Districts</span>
                 </div>
             </div>
         </div>
